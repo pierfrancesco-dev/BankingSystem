@@ -34,8 +34,8 @@ public class Utente {
         }
     }
 
-    public void stampaNomeCompleto(){
-        System.out.println(nome + " " + cognome);
+    public String getNomeCompleto(){
+       return nome + " " + cognome;
     }
 
     public Conto getConto(int indice) throws ContoNonTrovatoException{
