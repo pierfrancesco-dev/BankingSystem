@@ -34,6 +34,10 @@ public class Utente {
         }
     }
 
+    public void stampaNomeCompleto(){
+        System.out.println(nome + " " + cognome);
+    }
+
     public Conto getConto(int indice) throws ContoNonTrovatoException{
         if(indice < conti.size()) return conti.get(indice);
         throw new ContoNonTrovatoException("Conto non trovato.");
